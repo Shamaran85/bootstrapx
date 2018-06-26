@@ -1,0 +1,675 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+/* Quick Margin/Paddings */
+.add-margin {
+    margin-top: 30px;
+}
+
+.add-margin50 {
+    margin-top: 50px;
+}
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+
+/* Top Header */
+#top-header {
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+#top-header .glyphicon {
+    padding: 12px 8px 12px 0;
+}
+
+#top-header span:last-child {
+    padding-left: 20px;
+}
+
+/* Logo */
+.navbar-brand {
+    padding-right: 30px;
+    height: 100%;
+}
+
+/* Navbar Navigation Styles */
+.navbar {
+    margin-bottom: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar-default {
+    min-height: 100px;
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    background-color: #FFF;
+    box-shadow: inset 0 -1px 0 0 #eee;
+}
+
+.navbar .nav {
+    padding-top: 35px;
+}
+
+.navbar-default .navbar-nav > li {
+    padding: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #444;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    transition: 200ms ease;
+    padding: 0 0 3px 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #1D6EA1;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 -2px 0 0 #1D6EA1;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a {
+    box-shadow: none;
+    background-image: none;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #1D6EA1;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 -2px 0 0 #1D6EA1;
+}
+
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:focus,
+.dropdown-menu > li > a:focus {
+    background-color: transparent;
+    background-image: none;
+    color: #555;
+    box-shadow: none;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: transparent;
+    background-image: none;
+    color: #1D6EA1;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #555;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #1D6EA1;
+}
+
+
+/* Remove padding from Search item */
+.navbar-right li:last-child {
+    padding-right: 0;
+}
+
+/* Navbar Social Icons */
+#top-header .fa {
+    padding: 10px 0 0 10px;
+    font-size: 18px;
+    color: white;
+}
+
+#top-header .fa-facebook:hover {
+    color: #4060A5;
+    text-decoration: none;
+}
+
+#top-header .fa-twitter:hover {
+    color: #00ABE3;
+    text-decoration: none;
+}
+
+#top-header .fa-google-plus:hover {
+    color: #e64522;
+    text-decoration: none;
+}
+
+#top-header .fa-linkedin:hover {
+    color: #0094BC;
+    text-decoration: none;
+}
+
+
+/* Carousel Captions */
+
+.carousel-caption {
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.4);
+    left: 25%;
+    right: 25%;
+    bottom: 40px;
+    padding: 0 40px 20px 40px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    bottom: -5px;
+}
+
+/* Modal Search */
+#searchModal .modal-header {
+    border: none;
+}
+
+#searchModal h3 {
+    padding: 0;
+    margin-top: 0;
+    color: #555;
+}
+
+
+/* Front Page Tabs */
+
+.nav-pills > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+}
+
+.nav-pills {
+    text-align:center;
+}
+
+.estateTabs {
+    color: #8c8c8c;
+}
+
+.estateTabs a {
+    color: #3a4659;
+    text-decoration: none;
+}
+
+/* Heading image */
+.estateTabs .panel-heading {
+    padding: 0;
+    overflow: hidden;
+}
+
+.estateTabs .panel-heading img {
+    transition: 500ms ease;
+}
+
+.estateTabs .panel-heading img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+/* Heading Image Ribbons */
+.estateTabs .panel-heading span {
+    position: absolute;
+    left: 16px;
+    top: 15px;
+    min-width: 100px;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+}
+
+.estateTabs .panel-heading .featured {
+    background-color: #F36759;
+}
+
+.estateTabs .panel-heading .newOffer {
+    background-color: #3A8AB7;
+}
+
+.estateTabs .panel-heading .openHouse {
+    background-color: #49c349;
+}
+
+
+/* Panel Body */
+.estateTabs .panel-body a h4:hover {
+    color: #337ab7;
+}
+
+.estateTabs .panel-body .tabEstatePrice {
+    color: #337ab7;
+    font-size: 15px;
+}
+
+/* Panel Body Button */
+.estateTabs .panel-body .btn-primary {
+    background-image: none;
+    border: none;
+    background-color: #1D6EA1;
+    border-radius: 0;
+    padding: 5px;
+    font-size: 11px;
+    color: white;
+}
+
+.estateTabs .panel-body .btn-primary:hover {
+    background-color: #555;
+}
+
+/* Panel Footer Icons */
+.estateTabs .panel-footer .share .glyphicon  {
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-top: -3px;
+    transition: 200ms ease;
+    color: #8c8c8c;
+}
+
+.estateTabs .panel-footer .share .glyphicon:hover  {
+    background-color: #1D6EA1;
+    border-color: #1D6EA1;
+    color: #fff;
+}
+
+/* Footer */
+#footer {
+    background-color: #1A1A1A;
+    color: #fff;
+    width: 100%;
+    margin-top: 75px;
+}
+
+#footer p {
+    margin: 0;
+    padding: 25px;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+
+/* Services/All Estates page */
+#allEstates {
+    color: #8c8c8c;
+}
+
+#allEstates a {
+    color: #3a4659;
+    text-decoration: none;
+}
+
+/* Heading image */
+#allEstates .panel-heading {
+    padding: 0;
+    overflow: hidden;
+}
+
+#allEstates .panel-heading img {
+    transition: 500ms ease;
+}
+
+#allEstates .panel-heading img:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+/* Panel Body */
+#allEstates .panel-body a h4 {
+    text-align: center;
+}
+
+/* Panel Body */
+#allEstates .panel-body a h4:hover {
+    color: #337ab7;
+}
+
+#allEstates .panel-body .tabEstatePrice {
+    color: #337ab7;
+    font-size: 15px;
+}
+
+/* Panel Body Button */
+#allEstates .panel-body .btn-primary {
+    background-image: none;
+    border: none;
+    background-color: #1D6EA1;
+    border-radius: 0;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+#allEstates .panel-body .btn-primary:hover {
+    background-color: #555;
+}
+
+#allEstates .panel-default > .panel-heading {
+    background-image: none;
+    background-color: #fff;
+    border-color: #ddd;
+    border-bottom: none;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+.singleEstate {
+   color: #8c8c8c;
+}
+
+.singleEstate h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.singleEstate .panel-title h2 {
+    color: #8c8c8c;
+}
+
+.singleEstate .panel-default {
+    border: none;
+    box-shadow: none;
+}
+
+.singleEstate .panel-default .panel-heading {
+    background-image: none;
+    background-color: #fff;
+    //border: none;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+
+/* Panel Footer Icons */
+.singleEstate .panel-heading .share .glyphicon  {
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-top: 10px;
+    transition: 200ms ease;
+    color: #8c8c8c;
+}
+
+.singleEstate .panel-heading .share .glyphicon:hover  {
+    background-color: #1D6EA1;
+    border-color: #1D6EA1;
+    color: #fff;
+}
+
+.singleEstate .panel-default .panel-body {
+    padding: 0;
+}
+
+.singleEstate .panel-default .panel-footer {
+    background-image: none;
+    background-color: #fff;
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.singleEstate .panel-default .panel-footer .singleEstatePrice {
+    color: #337ab7;
+    font-size: 18px;
+}
+
+.singleEstate .btn-default {
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+}
+
+.singleEstate .collapsedContent {
+    padding: 10px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+.singleEstateSidebar {
+   border-left: 1px solid #eee;
+}
+
+.singleEstateSidebar h4 {
+    color: #444;
+    padding: 10px 0;
+}
+
+.singleEstateSidebar .moreItems h5 {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.singleEstateSidebar .moreItems .page-header {
+    margin: 10px 0;
+}
+
+.singleEstateSidebar .moreItems a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.singleEstateSidebar .moreItems a:hover {
+    color: #444;
+}
+
+.singleEstateSidebar .moreItems img {
+    transition: 500ms ease;
+}
+
+.singleEstateSidebar .moreItems img:hover {
+    opacity: 0.7;
+}
+
+
+.singleEstateSidebar .moreItems .sidebarFeature {
+    margin-top: 15px;
+}
+
+.singleEstateSidebar .list-group {
+    box-shadow: none;
+}
+
+.singleEstateSidebar .list-group-item {
+    border: none;
+    border-bottom: 1px solid transparent;
+    padding: 10px 0;
+    box-shadow: inset 0 -1px 0 0 #eee;
+}
+
+.currency {
+    margin-top: -20px;
+}
+
+
+#allEstatePage {
+    margin: 50px 0 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#allEstatePage h1 {
+margin-top: 0;
+    //padding: 0;
+}
+
+#allEstatePage img {
+    margin-top: 15px;
+    padding: 5px;
+    background-color: #eee;
+}
+
+
+/* 2 */
+
+/*panel-footer*/
+.panel-footer>p{
+    margin-top: 8px;
+}
+
+/*popular-posts*/
+.caption>img{
+    float: left;
+    margin-right: 5px;
+}
+.link-style:link{
+    text-decoration: none;
+}
+.link-style>.thumbnail:hover{
+    border: solid #5BC0DE 1px;
+}
+/*thumbnail-img-size*/
+.thumbnail-img-size{
+    height: 80px !important;
+    width: 120px !important;
+}
+
+/* Heading image */
+
+.image-overlay-fix{
+    padding: 0;
+    overflow: hidden;
+}
+.panel-default img, .image-overlay-fix{
+    transition: 500ms ease;
+}
+
+.panel-default img:hover, .image-overlay-fix:hover {
+    transform: scale(1.01);
+    opacity: 0.8;
+}
+
+
+.add-margin-bottom{
+    margin-bottom: 25px;
+}
+.add-modal-margin{
+    margin-top: 10px;
+}
+
+/*image-overlay*/
+.image-overlay{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    padding: 5px;
+}
+.image-overlay-fix{
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+#map {
+    border: 1px solid #eee;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    .navbar-brand {
+        padding: 5px;
+    }
+
+    .category-style{
+        list-style: none;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .thumbnail{
+        padding: 0 0 10px 0;
+    }
+}
+
+
+
+/* Some Responsive Styles */
+@media screen and (max-width: 767px) {
+
+
+    /* Remove top padding from collapsed navbar */
+    .navbar .nav {
+        padding-top: 0;
+    }
+
+    /* Center logo on smaller devices */
+    .navbar-brand {
+        width: 100%;
+        margin-top: -40px;
+        padding: 15px;
+    }
+
+    .navbar-brand img {
+        margin: 0 auto;
+    }
+
+    /* Center dropdown items on smaller devices */
+    .dropdown-menu > li  {
+        text-align: center;
+    }
+
+
+    .singleEstateSidebar .no-padding-left {
+        padding-left: 15px;
+    }
+
+    #allEstatePage h1 {
+        margin-top: 15px;
+    }
+
+    /*comment-submit*/
+    button[type="submit"]{
+        width:100%;
+    }
+
+}
+
+
+/*Iphone-5-fix*/
+@media screen and (max-width: 350px) {
+    .panel-footer>p{
+        width:100%;
+        text-align: center;
+    }
+    .panel-footer>a{
+        width:100%;
+    }
+}
+#comment{
+    resize: none;
+}

@@ -1,0 +1,72 @@
+
+
+
+
+navbar-default
+{
+background-color: rgba(255,5,255,0.5) !important;
+}
+
+#logo
+{
+
+position: absolute;
+padding: 0;
+margin-top: 0;
+
+top: 0;
+left: 50%;
+margin-left: -125px;
+
+
+}
+
+#navbar-logo
+{
+width: 50%;
+}
+
+#map2
+{
+width:100%;
+
+border-bottom: 1px solid gray;
+
+}
+
+
+
+#large-logo
+{
+width: 40%;
+}
+
+#map
+{
+width: 80%;
+border: 1px solid black;
+
+}
+
+p
+{
+font-family: Helvetica;
+
+}
+
+h3
+{
+font-family: Helvetica;
+
+}
+
+
+
+#breads
+{
+border-radius: 10px;
+background-color: transparent;
+padding: 15px;
+
+}
+

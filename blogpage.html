@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>Blog-page</title>
+</head>
+<body>
+<!-- Top Header -->
+<div id="top-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <span> <i class="glyphicon glyphicon-phone-alt"></i>555 - 123 456</span>
+                <span> <i class="glyphicon glyphicon-map-marker"></i>Fun Street 23</span>
+            </div>
+            <div class="col-sm-6 hidden-xs text-right">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google-plus"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#EC-navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img alt="Logo" src="images/logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse text-center" id="EC-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Estates<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="estates.html">All Estates</a></li>
+                        <li><a href="florida.html">Florida</a></li>
+                        <li><a href="london.html">London</a></li>
+                        <li><a href="sydney.html">Sydney</a></li>
+                        <li><a href="dubai.html">Dubai</a></li>
+                        <li><a href="monaco.html">Monaco</a></li>
+                        <li><a href="thailand.html">Thailand</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li data-toggle="modal" data-target="#loginModal"><a href="#">Login</a></li>
+                <li data-toggle="modal" data-target="#searchModal"><a href="#"><i class="glyphicon glyphicon-search"></i> Search</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Search Modal -->
+<div class="modal fade" id="searchModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-center">Search..</h3>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login Modal-->
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                <h4 class="modal-title">LogIn</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="modalUser">Username</label>
+                        <div class="input-group">
+                            <input id="modalUser" type="text" class="form-control" placeholder="Username...">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalUser">Password</label>
+                        <div class="input-group">
+                            <input id="modalPass" type="password" class="form-control" placeholder="Password...">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="col-xs-12">
+                            <p  class="small text-muted pull-left">New here? <a href="#"> Sign up</a></p>
+                        </div>
+                        <div class="col-xs-12">
+                            <p class="small text-muted pull-left">Forgot your password? Click <a href="#">here</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 add-modal-margin">
+                        <a data-dismiss="modal" class="btn btn-danger" href="#">Close</a>
+                        <a class="btn btn-success" href="#">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Breadcrumbs -->
+    <ol class="breadcrumb">
+        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li>Blog</li>
+        <li class="active">Blog Page</li>
+    </ol>
+
+    <h1 class="page-header">Page <small>by <a href="#">Name</a></small></h1>
+
+    <!--Blog-Content-->
+    <div class="col-sm-8">
+        <figure>
+            <img class="img-responsive" src="images/estates/estate8.jpg" alt="">
+            <figcaption class="text-muted small">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </figcaption>
+        </figure>
+        <hr>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eos explicabo nam.
+            Aliquam beatae commodi delectus deleniti esse eveniet incidunt natus perferendis praesentium, provident
+            qui sequi unde vero voluptas voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque blanditiis facilis incidunt iure
+            nesciunt omnis quam reiciendis repellendus suscipit! Aliquam architecto beatae consequatur dolorum
+            exercitationem inventore ipsam labore repellat.</p>
+        <p>Ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur deserunt dignissimos ducimus
+            eveniet fugiat id impedit ipsum, iste molestias necessitatibus, neque rerum vero voluptas voluptate. Animi
+            aut distinctio nam.</p>
+        <blockquote>
+            <p>Dolor sit amet, consectetur adipisicing elit. Animi, aut cumque dolore doloribus ex ipsa iste
+                iusto magni minus modi, nesciunt nulla omnis possimus quam quas quo, totam. Dolore, doloremque?</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt ducimus earum enim est fuga,
+            harum impedit minus odio perspiciatis, placeat porro quam quasi quibusdam reiciendis sequi soluta suscipit
+            voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto autem cum doloribus
+            eligendi facere fugiat, illo laboriosam laudantium odit omnis optio quaerat qui soluta ullam velit voluptas!
+            Provident, quibusdam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias consequuntur
+            cupiditate doloremque fugiat magnam veniam? Consectetur dolorem, et fugiat ipsam libero magnam magni
+            numquam omnis, quaerat repellendus repudiandae sunt? </p>
+        <hr>
+        <a class="link-style pull-right" href="blog.html"><i class="glyphicon glyphicon-arrow-left"></i> Back</a>
+
+        <!--Comment-Form-->
+        <form>
+            <div class="form-group">
+                <label for="comment" class="lead">Leave a comment</label>
+                <textarea name="" id="comment" rows="8" class="form-control"></textarea>
+            </div>
+            <button type="submit" value="Submit" class="btn btn-primary pull-right">Submit</button>
+            <div class="clearfix"></div>
+        </form>
+        <hr>
+
+        <!--Comment-section-->
+        <ul class="media-list hidden-xs">
+            <!--Comment-->
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle" src="http://via.placeholder.com/80x80" alt="">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Comment</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa distinctio eos est ex
+                        inventore ipsum magnam molestias, nemo nulla, placeat quaerat quam repellendus saepe vero.
+                        Adipisci aliquam animi porro!
+                    </p>
+                    <!--Comment-->
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object img-circle" src="http://via.placeholder.com/80x80" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Comment</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa distinctio eos est ex
+                                inventore ipsum magnam molestias, nemo nulla, placeat quaerat quam repellendus saepe vero.
+                                Adipisci aliquam animi porro!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!--Comment-->
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle" src="http://via.placeholder.com/80x80" alt="">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Comment</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa distinctio eos est ex
+                        inventore ipsum magnam molestias, nemo nulla, placeat quaerat quam repellendus saepe vero.
+                        Adipisci aliquam animi porro!
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <!--Comment-section-xs-->
+        <ul class="media-list visible-xs">
+            <!--Comment-->
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle" src="http://via.placeholder.com/80x80" alt="">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Comment</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa distinctio eos est ex
+                        inventore ipsum magnam molestias, nemo nulla, placeat quaerat quam repellendus saepe vero.
+                        Adipisci aliquam animi porro!
+                    </p>
+                </div>
+            </li>
+            <!--Comment-->
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle" src="http://via.placeholder.com/80x80" alt="">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Comment</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa distinctio eos est ex
+                        inventore ipsum magnam molestias, nemo nulla, placeat quaerat quam repellendus saepe vero.
+                        Adipisci aliquam animi porro!
+                    </p>
+                </div>
+            </li>
+            <!--Comment-->
+            <li class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object img-circle" src="http://via.placeholder.com/80x80" alt="">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Comment</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam culpa distinctio eos est ex
+                        inventore ipsum magnam molestias, nemo nulla, placeat quaerat quam repellendus saepe vero.
+                        Adipisci aliquam animi porro!
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <!--Sidebar-->
+    <div class="col-sm-4 hidden-xs">
+        <h5 class="page-header">Popular keywords</h5>
+
+        <!-- Keywords -->
+        <div class="btn-group">
+            <button class="btn btn-info btn-sm" type="button">
+                Cheap <span class="badge">4</span>
+            </button>
+
+            <button class="btn btn-info btn-sm" type="button">
+                Architecture <span class="badge">24</span>
+            </button>
+
+            <button class="btn btn-info btn-sm" type="button">
+                Famous <span class="badge">43</span>
+            </button>
+
+            <button class="btn btn-info btn-sm" type="button">
+                Garden <span class="badge">14</span>
+            </button>
+        </div>
+
+        <h5 class="page-header">Popular Posts</h5>
+
+        <!--Popular Post-->
+        <a class="link-style" href="#">
+            <div class="thumbnail">
+                <div class="caption">
+                    <img class="thumbnail-img-size" src="images/estates/estate4.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet dolor exercitationem
+                        fugiat quod, repellendus! Error ipsa molestiae necessitatibus pariatur quo repellat saepe sint
+                        voluptates! Dicta fugit labore non perferendis!
+                    </p>
+                </div>
+            </div>
+        </a>
+        <!--Popular Post-->
+        <a class="link-style" href="#">
+            <div class="thumbnail">
+                <div class="caption">
+                    <img class="thumbnail-img-size" src="images/estates/estate5.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet dolor exercitationem
+                        fugiat quod, repellendus! Error ipsa molestiae necessitatibus pariatur quo repellat saepe sint
+                        voluptates! Dicta fugit labore non perferendis!</p>
+                </div>
+            </div>
+        </a>
+        <!--Popular Post-->
+        <a class="link-style" href="#">
+            <div class="thumbnail">
+                <div class="caption">
+                    <img class="thumbnail-img-size" src="images/estates/estate6.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet dolor exercitationem
+                        fugiat quod, repellendus! Error ipsa molestiae necessitatibus pariatur quo repellat saepe sint
+                        voluptates! Dicta fugit labore non perferendis!</p>
+                </div>
+            </div>
+        </a>
+
+        <h5 class="page-header">Recent Posts</h5>
+
+        <!--Recent Posts-->
+        <div class="list-group">
+            <a href="#" class="list-group-item">Cras justo odio</a>
+            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item">Morbi leo risus</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item">Vestibulum at eros</a>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="text-center">
+                <p>
+                    Copyright 2017 - EC Real Estate
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
